@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api/v1/rooms")
 public class HotelController {
-    private HotelService hotelService;
+
+    private final HotelService hotelService;
 
     @Autowired
     public HotelController(HotelService hotelService) {
