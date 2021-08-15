@@ -24,7 +24,6 @@ public class HotelController {
     @PostMapping("/optimize")
     ResponseEntity<HotelResponse> optimizeRooms(@RequestBody HotelRequest request) {
         HotelResponse response = hotelService.optimizeRooms(request);
-
         return ResponseEntity.ok(response);
     }
 
