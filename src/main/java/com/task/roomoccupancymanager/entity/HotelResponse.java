@@ -6,7 +6,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class HotelResponse {
-    private Integer noOfOccupiedPremiumRooms;
-    private Integer noOfOccupiedEconomyRooms;
-    private Integer totalAmount; //in EUR
+    private Integer occupiedPremiumRooms;
+    private Integer occupiedEconomyRooms;
+    private Double revenuePremium;
+    private Double revenueEconomy;
 }
